@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Camera, Trophy, Gift, Users, Sparkles, ChevronDown } from "lucide-react";
-import Base44Button from "./components/Base44Button";
+import Button from "./components/Button";
 
 export default function App() {
   const [scrollY, setScrollY] = useState(0);

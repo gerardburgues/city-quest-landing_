@@ -1,16 +1,94 @@
-# React + Vite
+# City Quest Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful landing page for City Quest Bingo - an urban exploration adventure game.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern Stack**: Built with React 19, Vite, and Tailwind CSS
+- **Animations**: Smooth animations powered by Framer Motion
+- **Icons**: Beautiful icons from Lucide React
+- **Responsive Design**: Mobile-first design that looks great on all devices
+- **Fast**: Lightning-fast development and build times with Vite
 
-## React Compiler
+## 📦 Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-## Expanding the ESLint configuration
+## 🛠️ Development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`
+
+## 🏗️ Build
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+## 📚 Tech Stack
+
+- **React 19.2.0** - UI library
+- **Vite 7.2.2** - Build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Animation library
+- **Lucide React** - Icon library
+- **React Router DOM** - Navigation (installed for future routing needs)
+
+## 🎨 Project Structure
+
+```
+city-quest-landing_/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Base44Button.jsx
+│   │   └── Button.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+└── postcss.config.js
+```
+
+## 🎯 Key Components
+
+- **Hero Section**: Eye-catching hero with animated background elements
+- **How It Works**: Step-by-step guide for users
+- **Features Section**: Showcase of key features with icons
+- **CTA Section**: Call-to-action with prominent button
+- **Footer**: Clean footer with branding
+
+## 🌐 Deployment
+
+This project can be deployed to any static hosting service like:
+
+- Vercel
+- Netlify
+- GitHub Pages
+- Cloudflare Pages
+
+## 📝 License
+
+© 2025 City Quest. All rights reserved.
