@@ -29,6 +29,51 @@ Once you push your code, the GitHub Actions workflow will automatically:
 
 Your site will be available at: `https://[your-username].github.io/[repository-name]/`
 
+### Step 4: Setup Custom Domain (Optional)
+
+If you own a custom domain, you can use it with GitHub Pages:
+
+1. **In GitHub Repository Settings → Pages**:
+   - Under "Custom domain", enter your domain (e.g., `cityquest.com` or `www.cityquest.com`)
+   - Click "Save"
+   - Check "Enforce HTTPS" (after DNS propagates)
+
+2. **Configure DNS at Your Domain Registrar**:
+
+   **Option A: Using Apex Domain** (e.g., `cityquest.com`):
+   
+   Add these **A records** pointing to GitHub's IPs:
+   ```
+   185.199.108.153
+   185.199.109.153
+   185.199.110.153
+   185.199.111.153
+   ```
+
+   **Option B: Using Subdomain** (e.g., `www.cityquest.com`):
+   
+   Add a **CNAME record**:
+   ```
+   CNAME: www → [your-username].github.io
+   ```
+
+   **Recommended: Use Both!**
+   - Add the A records for apex domain
+   - Add CNAME for www subdomain
+   - This covers both `cityquest.com` and `www.cityquest.com`
+
+3. **Create CNAME File** (automatic via GitHub UI, or manually):
+   
+   Create a file named `CNAME` in the `public/` directory with your domain:
+   ```
+   cityquest.com
+   ```
+
+4. **Wait for DNS Propagation** (5 minutes to 48 hours)
+   - Check status: [whatsmydns.net](https://www.whatsmydns.net/)
+
+5. **Enable HTTPS** in GitHub Pages settings once DNS propagates
+
 ---
 
 ## Alternative: Deploy to Vercel (Even Easier!)
