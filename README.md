@@ -27,6 +27,10 @@ npm run dev
 
 The app will be available at `http://localhost:5173`
 
+## 🌐 Live Site
+
+Visit the live site at: `https://gerardburgues.github.io/city-quest-landing_/`
+
 ## 🏗️ Build
 
 Build for production:
